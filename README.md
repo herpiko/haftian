@@ -7,7 +7,7 @@ A utility to create a BlankOn UEFI bootable USB.
 0. Get haftian
 1. Prepare your BlankOn .ISO
 2. Prepare your USB disk (this will be handled later) as GPT with 1 partition, formatted with FAT32 and mount it to somewhere
-3. Run haftian:
+3. Run haftian :
 
 ```
 cd /where/you/put/haftian/
@@ -31,12 +31,12 @@ This is how I prepare my USB disk. Note that `#` is Linux prompt and `(parted)` 
 (parted) mktable gpt
 (parted) mkpart efi fat32 1 -1
 (parted) toggle 1 boot
-(parted) p 
+(parted) p
 Model: SanDisk Ultra (scsi)
 Disk /dev/sdb: 8004MB
 Sector size (logical/physical): 512B/512B
 Partition Table: gpt
-Disk Flags: 
+Disk Flags:
 
 Number  Start   End     Size    File system  Name  Flags
  1      1049kB  8004MB  8003MB  fat32        efi   boot, esp
